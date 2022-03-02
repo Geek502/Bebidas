@@ -2,11 +2,14 @@ import React from 'react';
 import Header from './components/Header';
 import Formulario from './components/Formulario';
 import { Fragment } from 'react';
-
+import CategoriasProvider from './context/CategoriasContext';
 function App() {
+
+
   return (
     
-    <Fragment>
+    <CategoriasProvider>
+      
        <Header/>
     <div className='container mt-5'>
       <div className='row'>
@@ -14,7 +17,7 @@ function App() {
       </div>
     </div>
 
-    </Fragment>
+    </CategoriasProvider>
 
   );
 }
